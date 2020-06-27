@@ -1,0 +1,58 @@
+.weatherCard {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 80% 20%;
+  grid-template-areas:
+    "temp humAirWind"
+    "tempSelect";
+}
+.tempContainer {
+  grid-area: "temp";
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: start;
+  align-items: flex-start;
+}
+.city {
+  font-size: 30px;
+  padding: 20px;
+  margin: 0 auto;
+}
+.temp {
+  font-size: 60px;
+  padding: 0;
+  margin: 0 auto;
+}
+.clouds {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
+.tempCon {
+  margin: 0 auto;
+}
+.subTemp {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  margin: 0 auto;
+}
+.min {
+  margin: 5px;
+}
+
+.humAirWind {
+  grid-area: "humAirWind";
+  font-size: 18px;
+  align-items: center;
+}
+
+.tempType {
+  grid-area: "tempSelect";
+  justify-self: start;
+  font-size: 16px;
+  padding: 10px;
+  margin: 0 auto;
+}

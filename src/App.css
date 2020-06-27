@@ -1,0 +1,30 @@
+body {
+  text-align: center;
+  background: url(Clouds.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 1024px) {
+  .App {
+    width: 1024px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .App {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+.data {
+  background-color: rgba(255, 255, 255, 0.267);
+  margin: 15px;
+  padding: 5px;
+}
+/*# sourceMappingURL=App.css.map */

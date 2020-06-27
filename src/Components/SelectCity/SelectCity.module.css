@@ -1,0 +1,22 @@
+.top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.head {
+  align-self: start;
+  padding: 20px;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+.selectCity {
+  width: 200px;
+  height: 40px;
+  border: none;
+  padding: 10px;
+  background-color: rgb(212, 212, 216);
+  border-radius: 10px;
+  margin: 0;
+}
