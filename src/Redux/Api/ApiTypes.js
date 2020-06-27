@@ -40,10 +40,11 @@ export const getCities = (cities) => {
 };
 
 export const fetchData = (city) => {
+  let proxy = "https://cors-anywhere.herokuapp.com/";
   return (dispatch) => {
     dispatch(setLoader());
     Axios.get(
-      `http://api.openweathermap.org/data/2.5/weather?q=${city},mh,in&appid=e85f12ec97bc367ae2d3cec2c693d22e`
+      `${proxy}http://api.openweathermap.org/data/2.5/weather?q=${city},mh,in&appid=e85f12ec97bc367ae2d3cec2c693d22e`
     )
       .then(({ data }) => dispatch(getDataSuccess(data)))
       .catch((error) => dispatch(getDataFailure(error)));
