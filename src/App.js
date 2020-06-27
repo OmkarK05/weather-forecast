@@ -18,18 +18,7 @@ firebase.initializeApp(firebaseConfig);
 
 function App() {
   const dispatch = useDispatch();
-  // const initialState = {
-  //   Cities: [],
-  //   city: "null",
-  //   description: " ",
-  //   icon: " ",
-  //   temp: " ",
-  //   tempMin: " ",
-  //   tempMax: " ",
-  //   humidity: " ",
-  //   pressure: " ",
-  //   wind: " ",
-  // };
+
   console.log();
 
   const getData = () => {
