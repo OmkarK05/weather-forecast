@@ -13,6 +13,7 @@ import { GET_DATA } from "./Context/actionTypes";
 import { Provider, useDispatch, useSelector } from "react-redux";
 import { store } from "./Redux/store";
 import { getCities } from "./Redux/Api/ApiTypes";
+import DetectLocation from "./Components/DetectLocation/DetectLocation";
 
 firebase.initializeApp(firebaseConfig);
 
@@ -42,6 +43,7 @@ function App() {
   return (
     <div className="App">
       <div className="Container">
+        <DetectLocation></DetectLocation>
         <SelectCity></SelectCity>
         <FetchApi></FetchApi>
         <div className="data">
