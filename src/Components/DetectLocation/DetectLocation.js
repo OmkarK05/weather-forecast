@@ -29,7 +29,7 @@ function DetectLocation() {
     console.log();
 
     Axios.get(
-      `http://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=e85f12ec97bc367ae2d3cec2c693d22e`
+      `https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat=40.1013&lon=75.3836&appid=e85f12ec97bc367ae2d3cec2c693d22e`
     )
       .then(({ data }) => {
         console.log(data.name);
